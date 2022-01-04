@@ -1,0 +1,122 @@
+body { 
+    font-family: "lato", sans-serif;
+    font-size: 25px;
+    color: rgb(42, 94, 145);
+    background-color: white;/*rgb(234, 234, 234);*/
+    }
+
+#logo {
+	float: left;
+    margin-right: 20px
+    }
+            
+h1 {
+	/*color: rgb(42, 94, 145);*/
+    font-size: 1.5em;
+    text-align: center;
+    }
+h2{
+	font-size: .8em;
+    text-decoration:underline;
+    line-height: 0em;
+    }
+h3{
+	font-size: .6em;
+    }
+h4{
+	font-size: 1.5em;
+    margin:auto;
+    }
+
+#haslo {
+    font-style:italic;
+   /* text-align: center;*/
+    }
+
+.podkreslenie {
+    text-decoration:;
+    font-weight: bold;
+}            
+
+#adres {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#kontakt {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.ulm {
+	float: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    }
+
+.lim a {
+	display: block;
+    float: left;
+    text-align: center;
+    font-size: 1em;
+    width: 230px;
+    text-decoration: none;
+    color: black;
+	background-color: rgb(73, 161, 248);
+    padding: 10px 15px;
+    margin: 0px 1px 1px 0px;
+    border: 1px solid rgb(42, 94, 145);
+    border-radius: 5px;
+    }
+
+.lim a:hover {
+	color: white;
+    background: rgb(42, 94, 145);
+    border: 1px solid rgb(73, 161, 248);
+    }
+
+
+
+#zdjecie_glowne {
+    position: relative;
+    width: 100%;
+    }   
+
+#cennik {
+    text-align: center;
+    }
+
+.jachtytytul{
+    font-size: 1em;
+    color: rgb(0, 178, 221);
+    text-decoration: none;
+    }
+
+
+.jachty {
+    float: left;
+    margin-right: 10px;
+    }
+
+.opis {
+    font-size: .8em;
+    }
+
+.mapa {
+    width: 350px; 
+    text-align: center;
+    }
+
+#formularz{
+     font-size: .7em;
+    }
+
+#ofirmie{
+    font-size: .9em;
+    line-height: 1.1em;
+}
+         

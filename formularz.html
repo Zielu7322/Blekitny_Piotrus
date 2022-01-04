@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Czarter jachtów Błękitny Piotruś - rezerwacja</title>
+        <link rel="stylesheet" href="main.css">
+        <style></style>
+    </head>
+    
+    <body>
+        <heder>
+            <div>
+            <a href="index.html">
+            <img id="logo" src="grafika/logo-blekitny-piotrus.jpg" alt="logo firmy Błękitny Piotruś"></a>
+            <h1 id="haslo">  PASJA • SPORT • EMOCJE | Jakość w żeglarstwie!</h1>
+            <section>
+                <nav>
+                    <ul class=ulm>
+                        <li class=lim><a href="o_nas.html">O firmie</a></li>
+                        <li class=lim><a href="srodladowe.html">Jachty śródlądowe</a></li>
+                        <li class=lim><a href="morskie.html">Jachty morskie</a></li>
+                        <li class=lim><a href="kontakt.html">Kontakt</a></li>
+                </nav>
+            </section>
+            </div>
+            <br><br>     
+        </heder>
+          
+   <script>
+function sprawdz(formularz)
+{
+	for (i = 0; i < formularz.length; i++)
+	{
+		var pole = formularz.elements[i];
+		if (!pole.disabled && !pole.readonly && (pole.type == "text" || pole.type == "date") && pole.value == "")
+		{
+			alert("Proszę wypełnić wszystkie pola!");
+			return false;
+		}
+
+	}
+  /* if (document.forms.formularz.dataod.value)<document.forms.formularz.datado.value){
+                        alert(" pola!");
+			            return false;
+   }*/
+     /*alert(document.forms.formularz.dataod.value,document.forms.formularz.datado.value);*/
+	return true;
+}
+</script>
+
+<form name="formularz" action="wysylka.php" method="post" onsubmit="if (sprawdz(this)) return true; return false"> <!-- enctype="text/plain" onsubmit="if (sprawdz(this)) return true; return false"> -->
+         <div>
+           <p class=jachtytytul><br>Jachty wnajmujemy TYLKO osobom posiadającym odpowiednie uprawnienia do prowadzenia jachtów 
+               <lu class=jachtytytul>
+                   <li class=jachtytytul>śródlądowych (wymagany patent żeglarza jachtowego)</li>
+                   <li class=jachtytytul>morskich (wymagany patent sternika jachtowego)</li>
+               </lu>
+               
+             </p>
+             <h4>Podaj dane kontaktowe <br><input type="reset" value="Wyczyść formularz"></h4>
+             <!-- 
+             <label for="imie">Imię:</label>
+                   <input type="text" name="imie" size="30" maxlength="100" autofocus>
+             <input type="submit" value="Wyślij zapytanie">
+             -->
+          
+           <table id="tabela_formularz">
+               <tbody>
+                <tr>
+                    <td><label for="imie">Imię:</label></td>
+                    <td><input type="text" name="imie" size="30" maxlength="100" autofocus></td>
+                </tr>
+                <tr>
+                    <td><label for="nazwisko">Nazwisko:</label></td>
+                    <td><input type="text" name="nazwisko" size="30" maxlength="100"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Adres e-mail:</label></td>
+                    <td><input type="text" name="email" size="30" maxlength="100"></td>
+                </tr>
+                <tr>
+                    <td><label for="telefon">Telefon:</label></td>
+                    <td><input type="text" name="telefon" size="30" maxlength="15" placeholder="123-123-123" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" title="123-123-123"></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td><label for="jachty">Wybierz jacht: </label></td>
+                    <td><input list="jachtyf" name="jachty" size="30" >
+                        <datalist id="jachtyf">
+                            <option value="Twister 780 komfort - Mazury">
+                            <option value="Altra 27 - Mazury">
+                            <option value="Raptor 26 komfort - Mazury">
+                            <option value="Bonawentura - Morze">
+                            <option value="Bavaria 51 - Morze">
+                            <option value="Hanse 348 - Morze">
+                        </datalist></td>
+                </tr>
+                <tr>
+                    <td><label for="dataod">Podaj datę wypożyczenia: </label></td>
+                    <td><input type="date" id="dateod" name="dataod"></td>
+                </tr>
+                <tr>
+                    <td><label for="datado">Podaj datę zwrotu: </label></td>
+                    <td><input type="date" id="datado" name="datado"></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td colspan="2" align="right"><input type="submit" value="Wyślij zapytanie"></td>
+                </tr>
+               </tbody>
+              
+           <br>
+
+        </div>
+            
+            </form>
+            
+            
+        
+    </body>
+</html>
